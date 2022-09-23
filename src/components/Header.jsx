@@ -1,5 +1,5 @@
 import React from 'react';
-import '../slyles/Header.scss';
+import '../styles/Header.scss';
 export const Header = () => {
   return (
     <nav>

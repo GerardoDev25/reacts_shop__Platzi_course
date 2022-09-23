@@ -2,7 +2,7 @@ import React from 'react';
 
 // import logo from '../../assets/logos/favicon_yard_sale.svg';
 
-import '../slyles/Login.scss';
+import '../styles/Login.scss';
 export const Login = () => {
   return (
     <div className="login">

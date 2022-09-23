@@ -1,5 +1,5 @@
 import React from 'react';
-import '../slyles/RecoveryPassword.scss';
+import '../styles/RecoveryPassword.scss';
 export const RecoveryPassword = () => {
   return (
     <div className="login">
