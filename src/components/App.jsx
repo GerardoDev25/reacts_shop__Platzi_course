@@ -1,5 +1,11 @@
 import React from 'react';
-import '../slyles/global.scss';
+import { Layout } from '../containers/Layout';
+import { Login } from '../containers/Login';
+import '../slyles/global.css';
 export const App = () => {
-  return <h1>Hola Mundo!</h1>;
+  return (
+    <Layout>
+      <Login />
+    </Layout>
+  );
 };
