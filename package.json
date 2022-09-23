@@ -4,7 +4,8 @@
   "description": "reacts_shop__Platzi_course curso practico de react",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack serve --open --mode development",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@babel/core": "^7.15.0",
