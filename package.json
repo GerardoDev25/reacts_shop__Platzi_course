@@ -20,6 +20,13 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
   },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GerardoDev25/reacts_shop__Platzi_course.git"
