@@ -2,7 +2,7 @@
   "name": "react-shop",
   "version": "0.0.1",
   "description": "reacts_shop__Platzi_course curso practico de react",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/GerardoDev25/reacts_shop__Platzi_course.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "javascript"
+  ],
   "author": "Gerardo Miranda <gerardodev25@gmail.com> (https://github.com/GerardoDev25)",
   "license": "MIT",
   "bugs": {
