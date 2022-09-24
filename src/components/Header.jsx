@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import { Menu } from '../components/Menu';
 import '@styles/Header.scss';
 
 import menu_icon from '@icons/icon_menu.svg';
@@ -7,6 +8,10 @@ import shopping_icon from '@icons/icon_shopping_cart.svg';
 import yard_sale_logo from '@logos/logo_yard_sale.svg';
 
 export const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const hanfletoggle = () => setToggle(!toggle);
+
   return (
     <nav>
       <img src={menu_icon} alt="menu" className="menu" />
@@ -37,7 +42,7 @@ export const Header = () => {
       </div>
 
       <div className="navbar-right">
-        <ul>
+        <ul onClick={hanfletoggle}>
           <li className="navbar-email">platzi@example.com</li>
           <li className="navbar-shopping-cart">
             <img src={shopping_icon} alt="shopping cart" />
@@ -45,6 +50,7 @@ export const Header = () => {
           </li>
         </ul>
       </div>
+      {toggle && <Menu />}
     </nav>
   );
 };
