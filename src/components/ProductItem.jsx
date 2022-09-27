@@ -6,9 +6,10 @@ import { AppContext } from '../context/AppContext';
 
 export const ProductItem = ({ ...product }) => {
   const { state, addToCard } = useContext(AppContext);
-
-  const { title, price, description, category, images } = product;
+  const { title, price, images } = product;
   const handleCard = (item) => {
+    
+    
     addToCard(item);
   };
 

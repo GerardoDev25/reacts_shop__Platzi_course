@@ -15,13 +15,13 @@ import { Orders } from '../pages/Orders';
 import { AppContext } from '../context/AppContext';
 
 import '../styles/global.css';
-import { useInitalState } from '../hooks/useInitialState';
+import { useInitialState } from '../hooks/useInitialState';
 
 export const App = () => {
-  const initalState = useInitalState();
+  const initialState = useInitialState();
 
   return (
-    <AppContext.Provider value={{ initalState }}>
+    <AppContext.Provider value={initialState}>
       <BrowserRouter>
         <Layout>
           <Switch>

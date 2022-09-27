@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
 import { Menu } from '../components/Menu';
 import '@styles/Header.scss';
 
 import menu_icon from '@icons/icon_menu.svg';
 import shopping_icon from '@icons/icon_shopping_cart.svg';
 import yard_sale_logo from '@logos/logo_yard_sale.svg';
+import { AppContext } from '../context/AppContext';
 
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
+
+  const { state } = useContext(AppContext);
 
   const hanfletoggle = () => setToggle(!toggle);
 
@@ -46,7 +48,7 @@ export const Header = () => {
           <li className="navbar-email">platzi@example.com</li>
           <li className="navbar-shopping-cart">
             <img src={shopping_icon} alt="shopping cart" />
-            <div>2</div>
+            {state.cart.length && <div>{state.cart.length}</div>}
           </li>
         </ul>
       </div>
